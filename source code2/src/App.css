@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+
+* {
+  padding: 0%;
+  margin: 0%;
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  background-color: #355b7def;
+}
+
+.fullPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  justify-content: center;
+}
+
+.box {
+  text-align: center;
+  background-color: snow;
+  height: 60vh;
+  width: 420px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  padding-bottom: 50px;
+}
+
+h1 {
+  letter-spacing: 2px;
+  font-size: 38px;
+  margin: 22px auto;
+  background-color: #ff4242;
+  min-height: 50px;
+  color: snow;
+  box-shadow: 1px 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+input {
+  text-align: center;
+  border: none;
+  outline: none;
+  border-bottom: 3px solid #ff4242;
+  font-size: 15px;
+  background: transparent;
+  height: 28px;
+  margin-top: 17px;
+  font-size: large;
+  font-weight: bolder;
+}
+
+::placeholder {
+  font-size: x-large;
+  font-weight: inherit;
+}
+
+ul li {
+  list-style-type: none;
+  text-transform: capitalize;
+  color: #ff4242;
+  font-weight: bold;
+}
+
+.addbutton {
+  background-color: #ff4242;
+  border-color: transparent;
+  font-size: 7px;
+  padding: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.4);
+  margin-left: 12px;
+  transition: background-color 0.2s;
+}
+
+.addbutton:hover {
+  background-color: #07b35a;
+  box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+.icon {
+  font-size: xx-large;
+  color: white;
+}
+
+.inputfield {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  margin-top: 27px;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: large;
+}
+
+.pDeletebtn {
+  border-color: transparent;
+  background-color: snow;
+  border-radius: 50%;
+  padding: 5px 5px;
+  font-size: 7px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  margin-right: 14px;
+  margin-top: 2px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+}
+
+.pDeletebtn .deleteBtn {
+  font-size: medium;
+}
+
+.pDeletebtn:hover {
+  color: #ff4242;
+  background-color: #ff42420c;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
+
+ul {
+  margin-top: 20px;
+}
+
+/* ================= TODO LIST BODY STYLING START ==================== */
+.ListContainer {
+  height: 350px;
+  overflow: hidden;
+}
+
+.ListContainer:hover {
+  overflow: auto;
+}
+
+.tabs_nav {
+  margin: auto;
+  width: 100%;
+}
+
+.tabs_nav .MuiAppBar-colorPrimary {
+  background: snow;
+  box-shadow: none;
+  color: #000;
+}
+.tabs_nav .PrivateTabIndicator-colo {
+  background-color: #ff4242;
+  height: 10px;
+}
+.tabs_nav .MuiTab-root {
+  width: auto;
+}
+.tabs_nav .MuiCheckbox-colorSecondary.Mui-checked {
+  color: #ff4242;
+}
+.tabs_nav .MuiTab-wrapper {
+  font-weight: 700;
+  color: #ff4242;
+}
+.tabs_nav .MuiBox-root {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+@media (min-width: 600px) {
+  .tabs_nav .MuiTab-root {
+    width: auto;
+  }
+  .tabs_nav .MuiTab-root {
+    min-width: 138px;
+  }
+}
+/* ================= TODO LIST BODY STYLING START ==================== */
+
+/* ================= TODO LIST INNER SCROLLBAR STYLING START ==================== */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px rgb(255, 66, 66);
+  border-radius: 18px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 66, 66, 0.6);
+  border-radius: 18px;
+  -webkit-box-shadow: inset 0 0 6px rgba(255, 66, 66);
+}
+/* ================= TODO LIST INNER SCROLLBAR STYLING END ==================== */
+
+@media screen and (max-width: 575px) {
+  .box {
+    width: 100%;
+    height: 100vh;
+    border-radius: 0px;
+  }
+  .fullPage {
+    align-items: flex-start;
+  }
+}
